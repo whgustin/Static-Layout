@@ -1,65 +1,79 @@
 body {
     background-color: #f1f3f5;
     padding: 0;
-    margin: 100px;
+    margin: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     overflow-x: hidden;
 }
 
 
-/* Header */
+/* ------------------------------------------Navbar------------------------------------------*/
 
-.header {
+.nav-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    flex-basis: 100vw;
+    justify-content: space-between;
+    margin-bottom: 5vh;
 }
 
-/* Back Button */
+/* BackButton */
 
-#back {
-    flex:2;
+.nav-back {
+
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-  }
-  
-/* a:hover {                *** HOVER MECHANIC******
-    background-color: rgb(197, 2, 197);
+.fa-arrow-left :link {
+    color: #678;
+    font-size: 32px; 
+}
+
+.fa-arrow-left :hover {
     color: white;
-  } */
-
-.round {
+    background-color: #8a67b8;
     border-radius: 50%;
-  }
-
-  /* Pointless */
-
-#pointless {
-    text-transform: uppercase;
-    flex:2;
+    height: 40px;
+    width: 40px;
 }
 
+/* HeaderButton */
+.nav-header {
+    text-transform: uppercase;
+    color: #678;
+}
 
-  /* Social Media */
-
-.fa {
-    padding: 0px;
-    font-size: 20px;
-    width: 25px;
-    text-align: center;
+.nav-header :link {
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 5px;
-    flex:2;
-  }
-  
+}
 
-/* Landing */
+/* SocialButton */
+
+.nav-social {
+    display: flex;
+    justify-content: space-between;
+    width: 5vw;
+}
+
+.fab fa-facebook-square {
+    margin-right: 1em;
+}
+
+.fab fa-twitter {
+    margin-left: 1em;
+}
+/* ------------------------------------------Landing------------------------------------------*/
+
+/* Wrapper */
+
+.wrapper {
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Landing One */
 
 .landingOne h1{
     font-family: 'Yantramanav', sans-serif;
@@ -78,77 +92,54 @@ a {
     margin: 5px;
 }
 
-.searchbox_1{
-    background-color: #fffbf8;
-    padding:13px;
-    width:600px;
-    margin: 0px auto;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border-radius:6px;
-    -webkit-box-shadow:
-    0 2px 4px 0 rgba(72, 72, 72, 0.83),
-    0 10px 15px 0 rgba(126, 126, 126, 0.12),
-    0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset,
-    0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
-    -moz-box-shadow:
-    0 2px 4px 0 rgba(72, 72, 72, 0.83),
-    0 10px 15px 0 rgba(126, 126, 126, 0.12),
-    0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset,
-    0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
-    box-shadow:
-    0 2px 4px 0 rgba(72, 72, 72, 0.83),
-    0 10px 15px 0 rgba(126, 126, 126, 0.12),
-    0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset,
-    0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
-    }
-    .search_1{
-    width:500px;
+/* Search */
+
+.search-box {
+    box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
+    /*Used flex-box to align the search box items in a row*/
+    display: flex; 
+    padding: 20px;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: 24px;
+    background: white;  
+    font-family: 'Montserrat', sans-serif;  
+}
+
+#sep{
+    color: rgba(102,119,136,.5);
+    font-size: 17px;
+    margin: 0 8px;
+}
+
+#prefix{
+    font-size: 13px;
+    color: rgba(102,119,136,.5);
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: rgba(241,243,245,.5);
+    margin: 0 0 0 16px;
+    box-shadow: 0 1px 1px rgba(102,119,136,.25);
+}
+
+input{
+    font-size: 17px;;
+    padding: 16px;
+    border: white;
+    width: 70%;
+}
+
+#fas fa-search {
+    width:30px;
     height:30px;
-    padding-left:15px;
-    border-radius:6px;
-    border:none;
-    color:#0F0D0D;;
-    font-weight:500;
-    background-color:#fffbf8;;
-    -webkit-box-shadow:
-    0 -2px 2px 0 rgba(199, 199, 199, 0.55),
-    0 1px 1px 0 #fff,
-    0 2px 2px 1px #fafafa,
-    0 2px 4px 0 #b2b2b2 inset,
-    0 -1px 1px 0 #f2f2f2 inset,
-    0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
-    -moz-box-shadow:
-    0 -2px 2px 0 rgba(199, 199, 199, 0.55),
-    0 1px 1px 0 #fff,
-    0 2px 2px 1px #fafafa,
-    0 2px 4px 0 #b2b2b2 inset,
-    0 -1px 1px 0 #f2f2f2 inset,
-    0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
-    box-shadow:
-    0 -2px 2px 0 rgba(199, 199, 199, 0.55),
-    0 1px 1px 0 #fff,
-    0 2px 2px 1px #fafafa,
-    0 2px 4px 0 #b2b2b2 inset,
-    0 -1px 1px 0 #f2f2f2 inset,
-    0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
-    }
-    .submit_1{
-    width:35px;
-    height:30px;
-    background-image:url(img/search-btn.png);
-    background-repeat: no-repeat;
-    background-position: 17px 2px;
-    background-color:transparent;
-    -webkit-background-size:20px 20px;
-    /* background-size:20px 20px; */
-    border:none;
-    cursor:pointer;
-    }
-    .search_1:focus{
-    outline:0;
-    }
+    background: url(../assests/magGlass.png) no-repeat;
+    position: relative;
+    left: 40px;
+}
+
+
+/* Landing Two */
+
 .landingTwo {
     text-align: center;    
 }
@@ -165,10 +156,9 @@ a {
     margin: 2px;
 }
 
-/* Top Pages */
+/* ------------------------------------------Top Pages------------------------------------------*/
 
 .topPages {
-    width: 75vw;
     float: center;
     text-align: center; 
     font-family: 'Yantramanav', sans-serif white;
@@ -245,7 +235,7 @@ a {
     line-height: 5vh;
     padding-left: 10px;
 }
-/* Recently Updated*/
+/* ------------------------------------------Recently Added------------------------------------------*/
 
 .recentlyUpdated h4 {
     font-family: 'Yantramanav', sans-serif;
@@ -288,7 +278,7 @@ a:active {
 text-decoration: none;
 color: black
 }
-/* Analytics */
+/* ------------------------------------------Analytics------------------------------------------*/
 
 .analytics h4 {
     font-family: 'Yantramanav', sans-serif;
@@ -298,7 +288,7 @@ color: black
     color: purple;
 }
 
-/* Ansible */
+/* ------------------------------------------Ansible------------------------------------------*/
 
 .ansible h4 {
     font-family: 'Yantramanav', sans-serif;
